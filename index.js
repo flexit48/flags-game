@@ -718,7 +718,7 @@ function quizgenerator_choose(total){
 
 
 ///////////////////////////// For choose.html page /////////////
-if (window.location.pathname === "/choose.html") {
+
 $(document).ready(function() {
   all= shuffleArray(all);
   quizgenerator_choose(all.length);
@@ -761,13 +761,13 @@ $(document).ready(function() {
     }  
     }
   });   
-}
+
 
 
 
   
 ///////////////////////////// for promode page////////////////////////
-else {
+
 $(document).ready(function() {
   $(".homebuttons").on("click", function(){
       var newText;
@@ -888,4 +888,4 @@ $("#flagimg").on("click", ".col-md-2", function() {
     }
   });
   
-}
+

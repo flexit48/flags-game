@@ -669,6 +669,7 @@ function quizgenerator(total){
    return hint= selectedContinent[a].flag;
   } else {
     gameend.play();
+    
     setTimeout(() => {
       const url = "./endgame.html?score=" + score;
       window.location.href = url;
@@ -708,6 +709,7 @@ function quizgenerator_choose(total){
    return hint= all[a].flag;
   } else {
     gameend.play();
+    $("#flagimgChoice").fadeOut(function(){remove();});
     setTimeout(() => {
       const url = "./endgame.html?score=" + score;
       window.location.href = url;
@@ -753,6 +755,7 @@ $(document).ready(function() {
       if (lives>0) {
         quizgenerator_choose(all.length);
       } else {
+        $("#flagimgChoice").fadeOut(function(){remove();});
         gameend.play();
         setTimeout(() => {
           const url = "./endgame.html?score=" + score;

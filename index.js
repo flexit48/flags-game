@@ -651,14 +651,6 @@ let options=[];
 
 
  ////////////////////Functions////////////////
-  
- function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
 
 
 function quizgenerator(total){
@@ -736,6 +728,15 @@ function mapquiz(total){
 
 ///////////////////////////// For choose.html page /////////////
 if (window.location.pathname === "/choose.html") {
+    
+ function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 $(document).ready(function() {
   all= shuffleArray(all);
   quizgenerator_choose(all.length);
@@ -785,7 +786,15 @@ $(document).ready(function() {
 
 else if(window.location.pathname === "/maps.html"){
 
-  
+    
+ function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
           
     all= shuffleArray(all);
     
@@ -829,6 +838,15 @@ else if(window.location.pathname === "/maps.html"){
   
 ///////////////////////////// for promode page////////////////////////
 else {
+    
+ function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 $(document).ready(function() {
   $(".homebuttons").on("click", function(){
       var newText;

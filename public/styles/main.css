@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+
+.background{
+  height: 100vh;
+ background-color: #000000;
+ opacity: 1;
+ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 19px ), repeating-linear-gradient( #bcbcbc55, #bcbcbc );
+
+}
+.mapbackground{
+  background: #21252b;
+  color: #d3ddef;
+  height: 100vh;
+}
+
+.homebuttons {
+   width: 350px;
+   font-weight: bolder;
+}
+
+body h1, body h2, body h3 {
+  color:rgb(249, 252, 255);
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-style: oblique;
+ 
+  }
+
+#flagimg{
+  font-size: 100px;
+  cursor: pointer;
+}
+
+#flagimg :hover{
+  transform: scale(1.5);
+}
+
+#flagimgChoice :hover{
+  transform: scale(1.5);
+}
+
+#flagimgChoice{
+  font-size: 130px;
+  cursor: pointer;
+}
+
+
+.footer {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  color:rgb(253, 254, 255);
+  margin-left: 30px;
+  margin-top: 50px;
+  padding-bottom: 30px;
+ 
+}
+
+.jumbotron{
+  border: solid whitesmoke;
+  border-radius: 15px;
+  background-color: #2b2c2f;
+  
+}
+
+#endscore, .lead{
+  color: #d3ddef;
+}
+
+
+.ag-canvas {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  position: relative;
+  visibility: visible;
+
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1rem;
+  opacity: 1;
+  transition: opacity 0.5s;
+  margin-top: -90px;
+} 
+.ag-canvas_svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin-left: 1rem;
+}
+.ag-canvas_svg path {
+  fill: #7f848d;
+  fill-opacity: 1;
+  stroke: #21252b;
+  stroke-opacity: 1;
+  stroke-width: 0.5;
+  transition: 0.5s;
+} 
+
+@media screen and (max-width: 767px) {
+  .ag-canvas {
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    height: auto;
+    padding: 4rem 1rem 1rem;
+  }
+  .ag-canvas_svg {
+    max-height: calc(100% - 6rem);
+    margin-left: 0;
+  }
+}

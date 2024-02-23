@@ -651,6 +651,7 @@ if (total > 0) {
  return hint= all[a].flag;
 } else {
   gameend.play();
+  $(".ag-canvas").fadeOut(function(){remove();});
   setTimeout(() => {
       const url = "./endgame.html?score=" + score;
       window.location.href = url;
@@ -669,6 +670,7 @@ $(document).ready(function(){
     });
 
   $('path').click(function() {
+    
      // Retrieve the title attribute which contains the country name
     const countryName = $(this).attr('title');
     
@@ -683,12 +685,14 @@ $(document).ready(function(){
   else{
        wrong.play();
        $('[title="' + quiz + '"]').css('fill', 'red');
+       $('[title="' + quiz + '"]').css('pointer-events', 'none');
        lives--;        
        $("#mistake").html(lives);
        all.splice(all.findIndex(country => country.name === quiz), 1); 
   if (lives>0) {
        mapquiz(all.length);
   } else {
+      $(".ag-canvas").fadeOut(function(){remove();});
        gameend.play();
        setTimeout(() => {
        const url = "./endgame.html?score=" + score;

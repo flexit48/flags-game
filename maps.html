@@ -415,6 +415,290 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
- <script src="index.js"></script>
+ <script>
+
+let all = [
+    { id: 1, name: 'Algeria', flag: '🇩🇿'   },
+    { id: 2, name: 'Angola', flag: '🇦🇴'   },
+    { id: 3, name: 'Benin', flag: '🇧🇯'   },
+    { id: 4, name: 'Botswana', flag: '🇧🇼'   },
+    { id: 5, name: 'Burkina Faso', flag: '🇧🇫'   },
+    { id: 6, name: 'Burundi', flag: '🇧🇮'   },
+    { id: 7, name: 'Cameroon', flag: '🇨🇲'   },
+    { id: 8, name: 'Cape Verde', flag: '🇨🇻'   },
+    { id: 9, name: 'Central African Republic', flag: '🇨🇫'   },
+    { id: 10, name: 'Chad', flag: '🇹🇩'   },
+    { id: 11, name: 'Comoros', flag: '🇰🇲'   },
+    { id: 12, name: 'Congo', flag: '🇨🇬'   },
+    { id: 13, name: "Cote D'Ivoire (Ivory Coast)", flag: '🇨🇮'   },
+    { id: 14, name: 'Democratic Republic of the Congo', flag: '🇨🇩'   },
+    { id: 15, name: 'Djibouti', flag: '🇩🇯'   },
+    { id: 16, name: 'Egypt', flag: '🇪🇬'   },
+    { id: 17, name: 'Equatorial Guinea', flag: '🇬🇶'   },
+    { id: 18, name: 'Eritrea', flag: '🇪🇷'   },
+    { id: 19, name: 'Ethiopia', flag: '🇪🇹'   },
+    { id: 20, name: 'Gabon', flag: '🇬🇦'   },
+    { id: 21, name: 'Gambia ', flag: '🇬🇲'   },
+    { id: 22, name: 'Ghana', flag: '🇬🇭'   },
+    { id: 23, name: 'Guinea', flag: '🇬🇳'   },
+    { id: 24, name: 'Guinea-Bissau', flag: '🇬🇼'   },
+    { id: 25, name: 'Kenya', flag: '🇰🇪'   },
+    { id: 26, name: 'Lesotho', flag: '🇱🇸'   },
+    { id: 27, name: 'Liberia', flag: '🇱🇷'   },
+    { id: 28, name: 'Libya', flag: '🇱🇾'   },
+    { id: 29, name: 'Madagascar', flag: '🇲🇬'   },
+    { id: 30, name: 'Malawi', flag: '🇲🇼'   },
+    { id: 31, name: 'Mali', flag: '🇲🇱'   },
+    { id: 32, name: 'Mauritania', flag: '🇲🇷'   },
+    { id: 33, name: 'Mauritius', flag: '🇲🇺'   },
+    { id: 34, name: 'Morocco', flag: '🇲🇦'   },
+    { id: 35, name: 'Mozambique', flag: '🇲🇿'   },
+    { id: 36, name: 'Namibia', flag: '🇳🇦'   },
+    { id: 37, name: 'Niger', flag: '🇳🇪'   },
+    { id: 38, name: 'Nigeria', flag: '🇳🇬'   },
+    { id: 39, name: 'Rwanda', flag: '🇷🇼'   },
+    { id: 40, name: 'Sao Tome and Principe', flag: '🇸🇹'   },
+    { id: 41, name: 'Senegal', flag: '🇸🇳'   },
+    { id: 42, name: 'Seychelles', flag: '🇸🇨'   },
+    { id: 43, name: 'Sierra Leone', flag: '🇸🇱'   },
+    { id: 44, name: 'Somalia', flag: '🇸🇴'   },
+    { id: 45, name: 'South Africa', flag: '🇿🇦'   },
+    { id: 46, name: 'South Sudan', flag: '🇸🇸'   },
+    { id: 47, name: 'Sudan', flag: '🇸🇩'   },
+    { id: 48, name: 'Eswatini', flag: '🇸🇿'   },
+    { id: 49, name: 'Tanzania', flag: '🇹🇿'   },
+    { id: 50, name: 'Togo', flag: '🇹🇬'   },
+    { id: 51, name: 'Tunisia', flag: '🇹🇳'   },
+    { id: 52, name: 'Uganda', flag: '🇺🇬'   },
+    { id: 53, name: 'Zambia', flag: '🇿🇲'   },
+    { id: 54, name: 'Zimbabwe', flag: '🇿🇼'   },
+    { id: 1, name: 'Afghanistan', flag: '🇦🇫'   },
+    { id: 2, name: 'Armenia', flag: '🇦🇲'   },    
+    { id: 3, name: 'Azerbaijan', flag: '🇦🇿'   }, 
+    { id: 4, name: 'Bahrain', flag: '🇧🇭'   },    
+    { id: 5, name: 'Bangladesh', flag: '🇧🇩'   }, 
+    { id: 6, name: 'Bhutan', flag: '🇧🇹'   },     
+    { id: 7, name: 'Brunei', flag: '🇧🇳'   },
+    { id: 8, name: 'Cambodia', flag: '🇰🇭'   },
+    { id: 9, name: 'China', flag: '🇨🇳'   },
+    { id: 10, name: 'Cyprus', flag: '🇨🇾'   },
+    { id: 11, name: 'East Timor', flag: '🇹🇱'   },
+    { id: 12, name: 'India', flag: '🇮🇳'   },
+    { id: 13, name: 'Indonesia', flag: '🇮🇩'   },
+    { id: 14, name: 'Iran', flag: '🇮🇷'   },
+    { id: 15, name: 'Iraq', flag: '🇮🇶'   },
+    { id: 16, name: 'Israel', flag: '🇮🇱'   },
+    { id: 17, name: 'Japan', flag: '🇯🇵'   },
+    { id: 18, name: 'Jordan', flag: '🇯🇴'   },
+    { id: 19, name: 'Kazakhstan', flag: '🇰🇿'   },
+    { id: 20, name: 'Kuwait', flag: '🇰🇼'   },
+    { id: 21, name: 'Kyrgyzstan', flag: '🇰🇬'   },
+    { id: 22, name: 'Laos', flag: '🇱🇦'   },
+    { id: 23, name: 'Lebanon', flag: '🇱🇧'   },
+    { id: 24, name: 'Malaysia', flag: '🇲🇾'   },
+    { id: 25, name: 'Maldives', flag: '🇲🇻'   },
+    { id: 26, name: 'Mongolia', flag: '🇲🇳'   },
+    { id: 27, name: 'Myanmar', flag: '🇲🇲'   },
+    { id: 28, name: 'Nepal', flag: '🇳🇵'   },
+    { id: 29, name: 'North Korea', flag: '🇰🇵'   },
+    { id: 30, name: 'Oman', flag: '🇴🇲'   },
+    { id: 31, name: 'Pakistan', flag: '🇵🇰'   },
+    { id: 32, name: 'Palestine', flag: '🇵🇸'   },
+    { id: 33, name: 'Philippines', flag: '🇵🇭'   },
+    { id: 34, name: 'Qatar', flag: '🇶🇦'   },
+    { id: 35, name: 'Russia', flag: '🇷🇺'   },
+    { id: 36, name: 'Saudi Arabia', flag: '🇸🇦'   },
+    { id: 37, name: 'Singapore', flag: '🇸🇬'   },
+    { id: 38, name: 'South Korea', flag: '🇰🇷'   },
+    { id: 39, name: 'Sri Lanka', flag: '🇱🇰'   },
+    { id: 40, name: 'Syria', flag: '🇸🇾'   },
+    { id: 41, name: 'Taiwan', flag: '🇹🇼'   },
+    { id: 42, name: 'Tajikistan', flag: '🇹🇯'   },
+    { id: 43, name: 'Thailand', flag: '🇹🇭'   },
+    { id: 44, name: 'Turkey', flag: '🇹🇷'   },
+    { id: 45, name: 'Turkmenistan', flag: '🇹🇲'   },
+    { id: 46, name: 'United Arab Emirates', flag: '🇦🇪'   },
+    { id: 47, name: 'Uzbekistan', flag: '🇺🇿'   },
+    { id: 48, name: 'Vietnam', flag: '🇻🇳'   },
+    { id: 49, name: 'Yemen', flag: '🇾🇪'   },
+    { id: 1, name: 'Australia', flag: '🇦🇺'   },
+    { id: 2, name: 'Fiji ', flag: '🇫🇯'   },
+    { id: 3, name: 'Kiribati', flag: '🇰🇮'   },
+    { id: 4, name: 'Marshall Islands', flag: '🇲🇭'   },
+    { id: 5, name: 'Micronesia', flag: '🇫🇲'   },
+    { id: 6, name: 'Nauru', flag: '🇳🇷'   },
+    { id: 7, name: 'New Zealand', flag: '🇳🇿'   },
+    { id: 8, name: 'Palau', flag: '🇵🇼'   },
+    { id: 9, name: 'Papua new Guinea', flag: '🇵🇬'   },
+    { id: 10, name: 'Samoa', flag: '🇼🇸'   },
+    { id: 11, name: 'Solomon Islands', flag: '🇸🇧'   },
+    { id: 12, name: 'Tonga', flag: '🇹🇴'   },
+    { id: 13, name: 'Tuvalu', flag: '🇹🇻'   },
+    { id: 14, name: 'Vanuatu', flag: '🇻🇺'   },
+    { id: 1, name: 'Albania', flag: '🇦🇱'   },
+    { id: 2, name: 'Andorra', flag: '🇦🇩'   },
+    { id: 3, name: 'Armenia', flag: '🇦🇲'   },
+    { id: 4, name: 'Austria', flag: '🇦🇹'   },
+    
+    { id: 6, name: 'Belarus', flag: '🇧🇾'   },
+    { id: 7, name: 'Belgium', flag: '🇧🇪'   },
+    { id: 8, name: 'Bosnia and Herzegovina', flag: '🇧🇦'   },
+    { id: 9, name: 'Bulgaria', flag: '🇧🇬'   },
+    { id: 10, name: 'Croatia', flag: '🇭🇷'   },
+    
+    { id: 12, name: 'Czech Republic', flag: '🇨🇿'   },
+    { id: 13, name: 'Denmark', flag: '🇩🇰'   },
+    { id: 14, name: 'Estonia', flag: '🇪🇪'   },
+    { id: 15, name: 'Finland', flag: '🇫🇮'   },
+    { id: 16, name: 'France', flag: '🇫🇷'   },
+    { id: 17, name: 'Georgia', flag: '🇬🇪'   },
+    { id: 18, name: 'Germany', flag: '🇩🇪'   },
+    { id: 19, name: 'Greece', flag: '🇬🇷'   },
+    { id: 20, name: 'Hungary', flag: '🇭🇺'   },
+    { id: 21, name: 'Iceland', flag: '🇮🇸'   },
+    { id: 22, name: 'Ireland', flag: '🇮🇪'   },
+    { id: 23, name: 'Italy', flag: '🇮🇹'   },
+    { id: 24, name: 'Kosovo', flag: '🇽🇰'   },
+    { id: 25, name: 'Latvia', flag: '🇱🇻'   },
+    { id: 26, name: 'Liechtenstein', flag: '🇱🇮'   },
+    { id: 27, name: 'Lithuania', flag: '🇱🇹'   },
+    { id: 28, name: 'Luxembourg', flag: '🇱🇺'   },
+    { id: 29, name: 'Malta', flag: '🇲🇹'   },
+    { id: 30, name: 'Moldova', flag: '🇲🇩'   },
+    { id: 31, name: 'Monaco', flag: '🇲🇨'   },
+    { id: 32, name: 'Montenegro', flag: '🇲🇪'   },
+    { id: 33, name: 'Netherlands', flag: '🇳🇱'   },
+    { id: 34, name: 'Norway', flag: '🇳🇴'   },
+    { id: 35, name: 'Poland', flag: '🇵🇱'   },
+    { id: 36, name: 'Portugal', flag: '🇵🇹'   },
+    { id: 37, name: 'Romania', flag: '🇷🇴'   },
+    
+    { id: 39, name: 'San Marino', flag: '🇸🇲'   },
+    { id: 40, name: 'Serbia', flag: '🇷🇸'   },
+    { id: 41, name: 'Slovakia', flag: '🇸🇰'   },
+    { id: 42, name: 'Slovenia', flag: '🇸🇮'   },
+    { id: 43, name: 'Spain', flag: '🇪🇸'   },
+    { id: 44, name: 'Sweden', flag: '🇸🇪'   },
+    { id: 45, name: 'Switzerland', flag: '🇨🇭'   },
+    { id: 46, name: 'Ukraine', flag: '🇺🇦'   },
+    { id: 47, name: 'United Kingdom', flag: '🇬🇧'   },
+    { id: 48, name: 'Vatican City ', flag: '🇻🇦'   },
+    { id: 49, name: 'North Macedonia', flag: '🇲🇰'   },
+    { id: 1, name: 'Antigua And Barbuda', flag: '🇦🇬'   },
+    { id: 2, name: 'Bahamas', flag: '🇧🇸'   },
+    { id: 3, name: 'Barbados', flag: '🇧🇧'   },
+    { id: 4, name: 'Belize', flag: '🇧🇿'   },
+    { id: 5, name: 'Canada', flag: '🇨🇦'   },
+    { id: 6, name: 'Costa Rica', flag: '🇨🇷'   },
+    { id: 7, name: 'Cuba', flag: '🇨🇺'   },
+    { id: 8, name: 'Dominica', flag: '🇩🇲'   },
+    { id: 9, name: 'Dominican Republic', flag: '🇩🇴'   },
+    { id: 10, name: 'El Salvador', flag: '🇸🇻'   },
+    { id: 11, name: 'Grenada', flag: '🇬🇩'   },
+    { id: 12, name: 'Guatemala', flag: '🇬🇹'   },
+    { id: 13, name: 'Haiti', flag: '🇭🇹'   },
+    { id: 14, name: 'Honduras', flag: '🇭🇳'   },
+    { id: 15, name: 'Jamaica', flag: '🇯🇲'   },
+    { id: 16, name: 'Mexico', flag: '🇲🇽'   },
+    { id: 17, name: 'Nicaragua', flag: '🇳🇮'   },
+    { id: 18, name: 'Panama', flag: '🇵🇦'   },
+    { id: 19, name: 'Saint Kitts And Nevis', flag: '🇰🇳'   },
+    { id: 20, name: 'Saint Lucia', flag: '🇱🇨'   },
+    { id: 21, name: 'Saint Vincent And The Grenadines', flag: '🇻🇨'   },
+    { id: 22, name: 'Trinidad And Tobago', flag: '🇹🇹'   },
+    { id: 23, name: 'United States', flag: '🇺🇸'   },
+    { id: 1, name: 'Argentina', flag: '🇦🇷'   },
+    { id: 2, name: 'Bolivia', flag: '🇧🇴'   },
+    { id: 3, name: 'Brazil', flag: '🇧🇷'   },
+    { id: 4, name: 'Chile', flag: '🇨🇱'   },
+    { id: 5, name: 'Colombia', flag: '🇨🇴'   },
+    { id: 6, name: 'Ecuador', flag: '🇪🇨'   },
+    { id: 7, name: 'Guyana', flag: '🇬🇾'   },
+    { id: 8, name: 'Paraguay', flag: '🇵🇾'   },
+    { id: 9, name: 'Peru', flag: '🇵🇪'   },
+    { id: 10, name: 'Suriname', flag: '🇸🇷'   },
+    { id: 11, name: 'Uruguay', flag: '🇺🇾'   },
+    { id: 12, name: 'Venezuela', flag: '🇻🇪'   }
+  ];
+  
+let score= 0;
+let quiz;
+let hint;
+let lives=3;
+
+
+var good = new Audio("https://github.com/flexit48/flags-game/blob/main/public/sounds/good.mp3?raw=true");
+var wrong =  new Audio("https://github.com/flexit48/flags-game/blob/main/public/sounds/wrong.mp3?raw=true");
+var gameend= new Audio("https://github.com/flexit48/flags-game/blob/main/public/sounds/end.mp3?raw=true");  
+ 
+ 
+ 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+ 
+
+function mapquiz(total){
+
+if (total > 0) {
+  const a = Math.floor(Math.random() * total); 
+  quiz = all[a].name;
+  $("#question").html(quiz);
+ return hint= all[a].flag;
+} else {
+  gameend.play();
+  setTimeout(() => {
+      const url = "./endgame.html?score=" + score;
+      window.location.href = url;
+  }, 4000);
+
+}
+
+}
+           
+all= shuffleArray(all);
+    
+$(document).ready(function(){
+   mapquiz(all.length);
+  $("#score").html(score);
+  $("#mistake").html(lives);
+    });
+
+  $('path').click(function() {
+     // Retrieve the title attribute which contains the country name
+    const countryName = $(this).attr('title');
+    
+     if(countryName===quiz){
+      good.play();
+      $(this).fadeOut(function() {$(this).remove();});
+      score++;
+      $("#score").html(score);
+      all.splice(all.findIndex(country => country.name === quiz), 1);
+      mapquiz(all.length);
+         }
+  else{
+       wrong.play();
+       $('[title="' + quiz + '"]').css('fill', 'red');
+       lives--;        
+       $("#mistake").html(lives);
+       all.splice(all.findIndex(country => country.name === quiz), 1); 
+  if (lives>0) {
+       mapquiz(all.length);
+  } else {
+       gameend.play();
+       setTimeout(() => {
+       const url = "./endgame.html?score=" + score;
+        window.location.href = url;
+     }, 4000);
+   }    
+            
+     }          
+   });    
+
+ </script>
 </body>
 </html>

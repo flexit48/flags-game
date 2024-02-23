@@ -651,6 +651,14 @@ let options=[];
 
 
  ////////////////////Functions////////////////
+  
+ function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 
 
 function quizgenerator(total){
@@ -708,35 +716,9 @@ function quizgenerator_choose(total){
   }
 }
 
-function mapquiz(total){
-
-  if (total > 0) {
-    const a = Math.floor(Math.random() * total); 
-    quiz = all[a].name;
-    $("#question").html(quiz);
-   return hint= all[a].flag;
-  } else {
-    gameend.play();
-  window.location.href = "./endgame.html";
-    const url = "./endgame.html?score=" + score;
-    window.location.href = url;
-  
-  }
-  
-  }
-
 
 ///////////////////////////// For choose.html page /////////////
 if (window.location.pathname === "/choose.html") {
-    
- function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
 $(document).ready(function() {
   all= shuffleArray(all);
   quizgenerator_choose(all.length);
@@ -781,72 +763,11 @@ $(document).ready(function() {
   });   
 }
 
-/////////////////////////////////for maps mode///////////////////////////////
 
 
-else if(window.location.pathname === "/maps.html"){
-
-    
- function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
-          
-    all= shuffleArray(all);
-    
-    $(document).ready(function(){
-        mapquiz(all.length);
-        $("#score").html(score);
-        $("#mistake").html(lives);
-    });
-        $('path').click(function() {
-          // Retrieve the title attribute which contains the country name
-          const countryName = $(this).attr('title');
-    
-          if(countryName===quiz){
-            good.play();
-            $(this).fadeOut(function() {$(this).remove();});
-            score++;
-            $("#score").html(score);
-            all.splice(all.findIndex(country => country.name === quiz), 1);
-            mapquiz(all.length);
-          }
-          else{
-            wrong.play();
-            $('[title="' + quiz + '"]').css('fill', 'red');
-            lives--;        
-            $("#mistake").html(lives);
-            all.splice(all.findIndex(country => country.name === quiz), 1); 
-            if (lives>0) {
-              mapquiz(all.length);
-            } else {
-              gameend.play();
-              setTimeout(() => {
-            const url = "./endgame.html?score=" + score;
-            window.location.href = url;
-        }, 4000);
-          }    
-            
-          }          
-        });
-    
-}
   
 ///////////////////////////// for promode page////////////////////////
 else {
-    
- function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
 $(document).ready(function() {
   $(".homebuttons").on("click", function(){
       var newText;

@@ -43,7 +43,7 @@
     </div>
     <div class="col-6 d-flex justify-content-end">
       <h3>
-        Lives: 
+        Mistakes: 
         <span id="mistake">              
         </span>
       </h3>
@@ -434,7 +434,7 @@ let all = [
     { id: 11, name: 'Comoros', flag: '🇰🇲'   },
     { id: 12, name: 'Congo', flag: '🇨🇬'   },
     { id: 13, name: "Cote D'Ivoire (Ivory Coast)", flag: '🇨🇮'   },
-    { id: 14, name: 'Democratic Republic of the Congo', flag: '🇨🇩'   },
+    { id: 14, name: 'Democratic Republic of Congo', flag: '🇨🇩'   },
     { id: 15, name: 'Djibouti', flag: '🇩🇯'   },
     { id: 16, name: 'Egypt', flag: '🇪🇬'   },
     { id: 17, name: 'Equatorial Guinea', flag: '🇬🇶'   },
@@ -532,7 +532,7 @@ let all = [
     { id: 6, name: 'Nauru', flag: '🇳🇷'   },
     { id: 7, name: 'New Zealand', flag: '🇳🇿'   },
     { id: 8, name: 'Palau', flag: '🇵🇼'   },
-    { id: 9, name: 'Papua new Guinea', flag: '🇵🇬'   },
+    { id: 9, name: 'Papua New Guinea', flag: '🇵🇬'   },
     { id: 10, name: 'Samoa', flag: '🇼🇸'   },
     { id: 11, name: 'Solomon Islands', flag: '🇸🇧'   },
     { id: 12, name: 'Tonga', flag: '🇹🇴'   },
@@ -627,7 +627,7 @@ let all = [
 let score= 0;
 let quiz;
 let hint;
-let lives=200;
+let mistakes=0;
 
 
 var good = new Audio("https://github.com/flexit48/flags-game/blob/main/public/sounds/good.mp3?raw=true");
@@ -654,7 +654,7 @@ if (total > 0) {
  return hint= all[a].flag;
 } else {
   gameend.play();
-  $(".ag-canvas").fadeOut(function(){remove();});
+  $('path').css('pointer-events', 'none');
   setTimeout(() => {
       const url = "./endgame.html?score=" + score;
       window.location.href = url;
@@ -669,7 +669,7 @@ all= shuffleArray(all);
 $(document).ready(function(){
    mapquiz(all.length);
   $("#score").html(score);
-  $("#mistake").html(lives);
+  $("#mistake").html(mistakes);
     });
 
   $('path').click(function() {
@@ -689,21 +689,13 @@ $(document).ready(function(){
        wrong.play();
        $('[title="' + quiz + '"]').css('fill', 'red');
        $('[title="' + quiz + '"]').css('pointer-events', 'none');
-       lives--;        
-       $("#mistake").html(lives);
+       mistakes++;        
+       $("#mistake").html(mistakes);
        all.splice(all.findIndex(country => country.name === quiz), 1); 
-  if (lives>0) {
+  
        mapquiz(all.length);
-  } else {
-      $(".ag-canvas").fadeOut(function(){remove();});
-       gameend.play();
-       setTimeout(() => {
-       const url = "./endgame.html?score=" + score;
-        window.location.href = url;
-     }, 4000);
-   }    
-            
-     }          
+  
+   }            
    });    
 
  </script>

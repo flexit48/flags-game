@@ -702,7 +702,7 @@ function quizgenerator_choose(total){
 }
 
 
-   return hint= all[a].flag;
+   hint= all[a].flag;
   } else {
     gameend.play();
     $("#flagimgChoice").fadeOut(function(){remove();});
@@ -1019,7 +1019,7 @@ $(document).ready(function() {
   }
   
   
-     return hint= selectedContinent[a].capital;
+     hint= selectedContinent[a].capital;
     } else {
       gameend.play();
       $("#capital").fadeOut(function(){remove();});

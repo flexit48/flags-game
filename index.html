@@ -31,10 +31,10 @@
   </div>
   <div class="row">
     <div class="col-lg-6 d-flex justify-content-center mb-3">
-      <a class="homebuttons btn btn-lg btn-primary px-5 py-3 py-sm-5" href="./promode.html"><i class="fa-solid fa-gamepad fa-beat-fade fa-2xl mx-3"></i>Continent Mode</a>
+      <a id="pro" class="homebuttons btn btn-lg btn-primary px-5 py-3 py-sm-5"><i class="fa-solid fa-gamepad fa-beat-fade fa-2xl mx-3"></i>Continent Mode</a>
     </div>
     <div class="col-lg-6 d-flex justify-content-center mb-3">
-      <a  class="homebuttons btn btn-lg btn-primary px-5 py-3 py-sm-5" href="./capitals.html"><i class="fa-solid fa-landmark-flag fa-beat-fade fa-2xl mx-3"></i>Capital Mode</a>
+      <a id="cap" class="homebuttons btn btn-lg btn-primary px-5 py-3 py-sm-5"><i class="fa-solid fa-landmark-flag fa-beat-fade fa-2xl mx-3"></i>Capital Mode</a>
     </div>
     
   </div>
@@ -42,6 +42,20 @@
 </div>
 <h5 class="footer">Made by: Jehanzeb Ahmed</h5>  
 </div>
+
+<script>
+  $(document).ready(function() {
+  $("#cap").on("click", function(){
+      var newText= "capitals";
+      window.location.href = "./promode.html?newText=" + newText;
+  });
+  $("#pro").on("click", function(){
+      var newText= "promode";
+      window.location.href = "./promode.html?newText=" + newText;
+  });
+});
+      
+</script>
 
 </body>
 </html>

@@ -29,7 +29,7 @@
 .capitaloption{
   background-color: rgb(89, 103, 234);
   border-radius: 25px;
-  
+  cursor: pointer;
 }
 
 body h1, body h2, body h3 {

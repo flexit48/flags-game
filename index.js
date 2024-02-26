@@ -876,7 +876,7 @@ $("#flagimg").on("click", ".col-md-2", function() {
      
     } else {
      wrong.play();
-      alert("Incorrect!!!\n Correct answer is  "+ hint);
+      alert("Incorrect!!!\n Correct answer is:   "+ hint);
       $(".col-md-2").eq(selectedContinent.findIndex(country => country.name === quiz)).fadeOut(function() {
     $(this).remove();
   });
@@ -970,7 +970,7 @@ $(document).ready(function() {
     } else  {
       wrong.play();
 
-      alert("Wrong!!!! \n Correct Option is   :"+ hint);
+      alert("Wrong!!!! \n Correct Option is:    "+ hint);
   
        // Remove the correct country from the list
        selectedContinent.splice(selectedContinent.findIndex(country => country.name === quiz), 1); 

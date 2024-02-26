@@ -744,7 +744,7 @@ $(document).ready(function() {
     } else  {
       wrong.play();
 
-      alert("Wrong!!!! \n Correct Option is"+ hint);
+      alert("Wrong!!!! \n Correct Option is:   "+ hint);
   
        // Remove the correct country from the list
        all.splice(all.findIndex(country => country.name === quiz), 1); 

@@ -12,21 +12,21 @@
 </head>
 <body class="mapbackground">
 
-  <div class="pt-sm-2 pt-md-4 d-flex justify-content-center">
-    <h2>Click Correct Map</h2>
-</div>
+  <div class="py-sm-2 py-md-2 mt-2 d-flex justify-content-center mapclicktext">
+      <h1> Click Correct Map</h1>
+  </div>
 
 
 
-<div class="container mb-5">
+<div class="container mb-4 mt-4 mapclicktext">
   <div class="row">
-    <div class="m-2 col-2 d-flex justify-content-center">
-      <a class="btn btn-danger mb-2 p-1 p-sm-2" href="./index.html">Home</a>
+    <div class="m-2 col-2 d-flex justify-content-center ms-sm-3">
+      <a class="btn px-lg-5 py-lg-2 px-md-4 py-md-2 px-sm-3 py-sm-2" id="indexhomebtn" href="./index.html">Home</a>
     </div>
   </div>
   <div class="row">
-    <div class="col d-flex justify-content-center">
-      <h3>
+    <div class="col-12 d-flex justify-content-center align-items-center">
+      <h3 class="">
         Country:
         <span id="question">              
         </span>
@@ -34,14 +34,14 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-6 d-flex justify-content-start">
+    <div class="col-6 d-flex justify-content-start align-items-center">
       <h3>
         Score: 
         <span id="score">              
         </span>
       </h3>
     </div>
-    <div class="col-6 d-flex justify-content-end">
+    <div class="col-6 d-flex justify-content-end align-items-center">
       <h3>
         Mistakes: 
         <span id="mistake">              
@@ -51,8 +51,7 @@
   </div>
 </div>
 
- 
-  <section class="ag-canvas">
+   <section class="ag-canvas">
     <svg class="ag-canvas_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       version="1.1" viewBox="0 0 1008 651">
       <path id="AE" title="United Arab Emirates"
@@ -677,6 +676,7 @@ $(document).ready(function(){
      // Retrieve the title attribute which contains the country name
     const countryName = $(this).attr('title');
     
+    
      if(countryName===quiz){
       good.play();
       $(this).fadeOut(function() {$(this).remove();});
@@ -688,6 +688,8 @@ $(document).ready(function(){
   else{
        wrong.play();
        $('[title="' + quiz + '"]').css('fill', 'red');
+       $('[title="' + quiz + '"]').addClass('animate-dash');
+
        $('[title="' + quiz + '"]').css('pointer-events', 'none');
        mistakes++;        
        $("#mistake").html(mistakes);

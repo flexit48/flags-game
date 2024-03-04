@@ -50,8 +50,117 @@ let asia=[
   { name: 'Yemen', flag: '🇾🇪', capital: 'Sana'}
 ];
 
+let asia2=[
+  { name: 'Afghanistan', flag: '🇦🇫', capital: 'Kabul'   },
+  { name: 'Armenia', flag: '🇦🇲', capital: 'Yerevan'   },    
+  { name: 'Azerbaijan', flag: '🇦🇿', capital: 'Baku'   }, 
+  { name: 'Bahrain', flag: '🇧🇭', capital: 'Manama'   },    
+  { name: 'Bangladesh', flag: '🇧🇩', capital: 'Dhaka'   }, 
+  { name: 'Bhutan', flag: '🇧🇹', capital: 'Thimphu'   },     
+  { name: 'Brunei', flag: '🇧🇳', capital: 'Bandar Seri Begawan'   },
+  { name: 'Cambodia', flag: '🇰🇭', capital: 'Phnom Penh'   },
+  { name: 'China', flag: '🇨🇳', capital: 'Beijing'   },
+  { name: 'Cyprus', flag: '🇨🇾', capital: 'Nicosia'   },
+  { name: 'East Timor', flag: '🇹🇱', capital: 'Dili'   },
+  { name: 'India', flag: '🇮🇳', capital: 'New Delhi'   },
+  { name: 'Indonesia', flag: '🇮🇩', capital: 'Jakarta'   },
+  { name: 'Iran', flag: '🇮🇷', capital: 'Tehran'   },
+  { name: 'Iraq', flag: '🇮🇶', capital: 'Baghdad'   },
+  { name: 'Israel', flag: '🇮🇱', capital: 'Jerusalem'   },
+  { name: 'Japan', flag: '🇯🇵', capital: 'Tokyo'   },
+  { name: 'Jordan', flag: '🇯🇴', capital: 'Amman'   },
+  { name: 'Kazakhstan', flag: '🇰🇿', capital: 'Nur-Sultan'   },
+  { name: 'Kuwait', flag: '🇰🇼', capital: 'Kuwait City'   },
+  { name: 'Kyrgyzstan', flag: '🇰🇬', capital: 'Bishkek'   },
+  { name: 'Laos', flag: '🇱🇦', capital: 'Vientiane'   },
+  { name: 'Lebanon', flag: '🇱🇧', capital: 'Beirut'   },
+  { name: 'Malaysia', flag: '🇲🇾', capital: 'Kuala Lumpur'   },
+  { name: 'Maldives', flag: '🇲🇻', capital: 'Malé'   },
+  { name: 'Mongolia', flag: '🇲🇳', capital: 'Ulaanbaatar'   },
+  { name: 'Myanmar', flag: '🇲🇲', capital: 'Naypyidaw'   },
+  { name: 'Nepal', flag: '🇳🇵', capital: 'Kathmandu'   },
+  { name: 'North Korea', flag: '🇰🇵', capital: 'Pyongyang'   },
+  { name: 'Oman', flag: '🇴🇲', capital: 'Muscat'   },
+  { name: 'Pakistan', flag: '🇵🇰', capital: 'Islamabad'   },
+  { name: 'Palestine', flag: '🇵🇸', capital: 'Ramallah'   },
+  { name: 'Philippines', flag: '🇵🇭', capital: 'Manila'   },
+  { name: 'Qatar', flag: '🇶🇦', capital: 'Doha'   },
+  { name: 'Russia', flag: '🇷🇺', capital: 'Moscow'   },
+  { name: 'Saudi Arabia', flag: '🇸🇦', capital: 'Riyadh'   },
+  { name: 'Singapore', flag: '🇸🇬', capital: 'Singapore'   },
+  { name: 'South Korea', flag: '🇰🇷', capital: 'Seoul'   },
+  { name: 'Sri Lanka', flag: '🇱🇰', capital: 'Colombo'   },
+  { name: 'Syria', flag: '🇸🇾', capital: 'Damascus'   },
+  { name: 'Taiwan', flag: '🇹🇼', capital: 'Taipei'   },
+  { name: 'Tajikistan', flag: '🇹🇯', capital: 'Dushanbe'   },
+  { name: 'Thailand', flag: '🇹🇭', capital: 'Bangkok'   },
+  { name: 'Turkey', flag: '🇹🇷', capital: 'Ankara'   },
+  { name: 'Turkmenistan', flag: '🇹🇲', capital: 'Ashgabat'   },
+  { name: 'United Arab Emirates', flag: '🇦🇪', capital: 'Abu Dhabi'   },
+  { name: 'Uzbekistan', flag: '🇺🇿', capital: 'Tashkent'   },
+  { name: 'Vietnam', flag: '🇻🇳', capital: 'Hanoi'   },
+  { name: 'Yemen', flag: '🇾🇪', capital: 'Sana'}
+];
+
 
 let africa = [
+  { name: 'Algeria', flag: '🇩🇿', capital: 'Algiers'   },
+  { name: 'Angola', flag: '🇦🇴', capital: 'Luanda'   },
+  { name: 'Benin', flag: '🇧🇯', capital: 'Porto-Novo'   },
+  { name: 'Botswana', flag: '🇧🇼', capital: 'Gaborone'   },
+  { name: 'Burkina Faso', flag: '🇧🇫', capital: 'Ouagadougou'   },
+  { name: 'Burundi', flag: '🇧🇮', capital: 'Gitega'   },
+  { name: 'Cameroon', flag: '🇨🇲', capital: 'Yaoundé'   },
+  { name: 'Cape Verde', flag: '🇨🇻', capital: 'Praia'   },
+  { name: 'Central African Republic', flag: '🇨🇫', capital: 'Bangui'   },
+  { name: 'Chad', flag: '🇹🇩', capital: "N'Djamena"   },
+  { name: 'Comoros', flag: '🇰🇲', capital: 'Moroni'   },
+  { name: 'Congo', flag: '🇨🇬', capital: 'Brazzaville'   },
+  { name: "Cote D'Ivoire (Ivory Coast)", flag: '🇨🇮', capital: 'Yamoussoukro'   },
+  { name: 'Democratic Republic of the Congo', flag: '🇨🇩', capital: 'Kinshasa'   },
+  { name: 'Djibouti', flag: '🇩🇯', capital: 'Djibouti'   },
+  { name: 'Egypt', flag: '🇪🇬', capital: 'Cairo'   },
+  { name: 'Equatorial Guinea', flag: '🇬🇶', capital: 'Malabo'   },
+  { name: 'Eritrea', flag: '🇪🇷', capital: 'Asmara'   },
+  { name: 'Ethiopia', flag: '🇪🇹', capital: 'Addis Ababa'   },
+  { name: 'Gabon', flag: '🇬🇦', capital: 'Libreville'   },
+  { name: 'Gambia ', flag: '🇬🇲', capital: 'Banjul'   },
+  { name: 'Ghana', flag: '🇬🇭', capital: 'Accra'   },
+  { name: 'Guinea', flag: '🇬🇳', capital: 'Conakry'   },
+  { name: 'Guinea-Bissau', flag: '🇬🇼', capital: 'Bissau'   },
+  { name: 'Kenya', flag: '🇰🇪', capital: 'Nairobi'   },
+  { name: 'Lesotho', flag: '🇱🇸', capital: 'Maseru'   },
+  { name: 'Liberia', flag: '🇱🇷', capital: 'Monrovia'   },
+  { name: 'Libya', flag: '🇱🇾', capital: 'Tripoli'   },
+  { name: 'Madagascar', flag: '🇲🇬', capital: 'Antananarivo'   },
+  { name: 'Malawi', flag: '🇲🇼', capital: 'Lilongwe'   },
+  { name: 'Mali', flag: '🇲🇱', capital: 'Bamako'   },
+  { name: 'Mauritania', flag: '🇲🇷', capital: 'Nouakchott'   },
+  { name: 'Mauritius', flag: '🇲🇺', capital: 'Port Louis'   },
+  { name: 'Morocco', flag: '🇲🇦', capital: 'Rabat'   },
+  { name: 'Mozambique', flag: '🇲🇿', capital: 'Maputo'   },
+  { name: 'Namibia', flag: '🇳🇦', capital: 'Windhoek'   },
+  { name: 'Niger', flag: '🇳🇪', capital: 'Niamey'   },
+  { name: 'Nigeria', flag: '🇳🇬', capital: 'Abuja'   },
+  { name: 'Rwanda', flag: '🇷🇼', capital: 'Kigali'   },
+  { name: 'Sao Tome and Principe', flag: '🇸🇹', capital: 'São Tomé'   },
+  { name: 'Senegal', flag: '🇸🇳', capital: 'Dakar'   },
+  { name: 'Seychelles', flag: '🇸🇨', capital: 'Victoria'   },
+  { name: 'Sierra Leone', flag: '🇸🇱', capital: 'Freetown'   },
+  { name: 'Somalia', flag: '🇸🇴', capital: 'Mogadishu'   },
+  { name: 'South Africa', flag: '🇿🇦', capital: 'Pretoria, Bloemfontein, Cape Town'   },
+  { name: 'South Sudan', flag: '🇸🇸', capital: 'Juba'   },
+  { name: 'Sudan', flag: '🇸🇩', capital: 'Khartoum'   },
+  { name: 'Swaziland', flag: '🇸🇿', capital: 'Mbabane'   },
+  { name: 'Tanzania', flag: '🇹🇿', capital: 'Dodoma'   },
+  { name: 'Togo', flag: '🇹🇬', capital: 'Lomé'   },
+  { name: 'Tunisia', flag: '🇹🇳', capital: 'Tunis'   },
+  { name: 'Uganda', flag: '🇺🇬', capital: 'Kampala'   },
+  { name: 'Zambia', flag: '🇿🇲', capital: 'Lusaka'   },
+  { name: 'Zimbabwe', flag: '🇿🇼', capital: 'Harare'   }
+];
+
+let africa2 = [
   { name: 'Algeria', flag: '🇩🇿', capital: 'Algiers'   },
   { name: 'Angola', flag: '🇦🇴', capital: 'Luanda'   },
   { name: 'Benin', flag: '🇧🇯', capital: 'Porto-Novo'   },
@@ -160,8 +269,87 @@ let europe = [
   { name: 'North Macedonia', flag: '🇲🇰', capital: 'Skopje'   }
 ];
 
+let europe2 = [
+  { name: 'Albania', flag: '🇦🇱', capital: 'Tirana'   },
+  { name: 'Andorra', flag: '🇦🇩', capital: 'Andorra la Vella'   },
+  { name: 'Armenia', flag: '🇦🇲', capital: 'Yerevan'   },
+  { name: 'Austria', flag: '🇦🇹', capital: 'Vienna'   },
+  { name: 'Azerbaijan', flag: '🇦🇿', capital: 'Baku'   },
+  { name: 'Belarus', flag: '🇧🇾', capital: 'Minsk'   },
+  { name: 'Belgium', flag: '🇧🇪', capital: 'Brussels'   },
+  { name: 'Bosnia and Herzegovina', flag: '🇧🇦', capital: 'Sarajevo'   },
+  { name: 'Bulgaria', flag: '🇧🇬', capital: 'Sofia'   },
+  { name: 'Croatia', flag: '🇭🇷', capital: 'Zagreb'   },
+  { name: 'Cyprus', flag: '🇨🇾', capital: 'Nicosia'   },
+  { name: 'Czech Republic', flag: '🇨🇿', capital: 'Prague'   },
+  { name: 'Denmark', flag: '🇩🇰', capital: 'Copenhagen'   },
+  { name: 'Estonia', flag: '🇪🇪', capital: 'Tallinn'   },
+  { name: 'Finland', flag: '🇫🇮', capital: 'Helsinki'   },
+  { name: 'France', flag: '🇫🇷', capital: 'Paris'   },
+  { name: 'Georgia', flag: '🇬🇪', capital: 'Tbilisi'   },
+  { name: 'Germany', flag: '🇩🇪', capital: 'Berlin'   },
+  { name: 'Greece', flag: '🇬🇷', capital: 'Athens'   },
+  { name: 'Hungary', flag: '🇭🇺', capital: 'Budapest'   },
+  { name: 'Iceland', flag: '🇮🇸', capital: 'Reykjavik'   },
+  { name: 'Ireland', flag: '🇮🇪', capital: 'Dublin'   },
+  { name: 'Italy', flag: '🇮🇹', capital: 'Rome'   },
+  { name: 'Kosovo', flag: '🇽🇰', capital: 'Pristina'   },
+  { name: 'Latvia', flag: '🇱🇻', capital: 'Riga'   },
+  { name: 'Liechtenstein', flag: '🇱🇮', capital: 'Vaduz'   },
+  { name: 'Lithuania', flag: '🇱🇹', capital: 'Vilnius'   },
+  { name: 'Luxembourg', flag: '🇱🇺', capital: 'Luxembourg City'   },
+  { name: 'Malta', flag: '🇲🇹', capital: 'Valletta'   },
+  { name: 'Moldova', flag: '🇲🇩', capital: 'Chisinau'   },
+  { name: 'Monaco', flag: '🇲🇨', capital: 'Monaco'   },
+  { name: 'Montenegro', flag: '🇲🇪', capital: 'Podgorica'   },
+  { name: 'Netherlands', flag: '🇳🇱', capital: 'Amsterdam'   },
+  { name: 'Norway', flag: '🇳🇴', capital: 'Oslo'   },
+  { name: 'Poland', flag: '🇵🇱', capital: 'Warsaw'   },
+  { name: 'Portugal', flag: '🇵🇹', capital: 'Lisbon'   },
+  { name: 'Romania', flag: '🇷🇴', capital: 'Bucharest'   },
+  { name: 'Russia', flag: '🇷🇺', capital: 'Moscow'   },
+  { name: 'San Marino', flag: '🇸🇲', capital: 'San Marino'   },
+  { name: 'Serbia', flag: '🇷🇸', capital: 'Belgrade'   },
+  { name: 'Slovakia', flag: '🇸🇰', capital: 'Bratislava'   },
+  { name: 'Slovenia', flag: '🇸🇮', capital: 'Ljubljana'   },
+  { name: 'Spain', flag: '🇪🇸', capital: 'Madrid'   },
+  { name: 'Sweden', flag: '🇸🇪', capital: 'Stockholm'   },
+  { name: 'Switzerland', flag: '🇨🇭', capital: 'Bern'   },
+  { name: 'Ukraine', flag: '🇺🇦', capital: 'Kyiv'   },
+  { name: 'United Kingdom', flag: '🇬🇧', capital: 'London'   },
+  { name: 'Vatican City ', flag: '🇻🇦', capital: 'Vatican City'   },
+  { name: 'North Macedonia', flag: '🇲🇰', capital: 'Skopje'   }
+];
+
+
 
 let northamerica = [
+  { name: 'Antigua And Barbuda', flag: '🇦🇬', capital: 'St. John\'s'   },
+  { name: 'Bahamas', flag: '🇧🇸', capital: 'Nassau'   },
+  { name: 'Barbados', flag: '🇧🇧', capital: 'Bridgetown'   },
+  { name: 'Belize', flag: '🇧🇿', capital: 'Belmopan'   },
+  { name: 'Canada', flag: '🇨🇦', capital: 'Ottawa'   },
+  { name: 'Costa Rica', flag: '🇨🇷', capital: 'San Jose'   },
+  { name: 'Cuba', flag: '🇨🇺', capital: 'Havana'   },
+  { name: 'Dominica', flag: '🇩🇲', capital: 'Roseau'   },
+  { name: 'Dominican Republic', flag: '🇩🇴', capital: 'Santo Domingo'   },
+  { name: 'El Salvador', flag: '🇸🇻', capital: 'San Salvador'   },
+  { name: 'Grenada', flag: '🇬🇩', capital: 'St. George\'s'   },
+  { name: 'Guatemala', flag: '🇬🇹', capital: 'Guatemala City'   },
+  { name: 'Haiti', flag: '🇭🇹', capital: 'Port-au-Prince'   },
+  { name: 'Honduras', flag: '🇭🇳', capital: 'Tegucigalpa'   },
+  { name: 'Jamaica', flag: '🇯🇲', capital: 'Kingston'   },
+  { name: 'Mexico', flag: '🇲🇽', capital: 'Mexico City'   },
+  { name: 'Nicaragua', flag: '🇳🇮', capital: 'Managua'   },
+  { name: 'Panama', flag: '🇵🇦', capital: 'Panama City'   },
+  { name: 'Saint Kitts And Nevis', flag: '🇰🇳', capital: 'Basseterre'   },
+  { name: 'Saint Lucia', flag: '🇱🇨', capital: 'Castries'   },
+  { name: 'Saint Vincent And The Grenadines', flag: '🇻🇨', capital: 'Kingstown'   },
+  { name: 'Trinidad And Tobago', flag: '🇹🇹', capital: 'Port of Spain'   },
+  { name: 'United States', flag: '🇺🇸', capital: 'Washington, D.C.'   }
+];
+
+let northamerica2 = [
   { name: 'Antigua And Barbuda', flag: '🇦🇬', capital: 'St. John\'s'   },
   { name: 'Bahamas', flag: '🇧🇸', capital: 'Nassau'   },
   { name: 'Barbados', flag: '🇧🇧', capital: 'Bridgetown'   },
@@ -205,6 +393,24 @@ let oceania = [
   { name: 'Vanuatu', flag: '🇻🇺', capital: 'Port Vila'   }
 ];
 
+let oceania2 = [
+  { name: 'Australia', flag: '🇦🇺', capital: 'Canberra'   },
+  { name: 'Fiji', flag: '🇫🇯', capital: 'Suva'   },
+  { name: 'Kiribati', flag: '🇰🇮', capital: 'South Tarawa'   },
+  { name: 'Marshall Islands', flag: '🇲🇭', capital: 'Majuro'   },
+  { name: 'Micronesia', flag: '🇫🇲', capital: 'Palikir'   },
+  { name: 'Nauru', flag: '🇳🇷', capital: 'Yaren'   },
+  { name: 'New Zealand', flag: '🇳🇿', capital: 'Wellington'   },
+  { name: 'Palau', flag: '🇵🇼', capital: 'Ngerulmud'   },
+  { name: 'Papua new Guinea', flag: '🇵🇬', capital: 'Port Moresby'   },
+  { name: 'Samoa', flag: '🇼🇸', capital: 'Apia'   },
+  { name: 'Solomon Islands', flag: '🇸🇧', capital: 'Honiara'   },
+  { name: 'Tonga', flag: '🇹🇴', capital: 'Nukuʻalofa'   },
+  { name: 'Tuvalu', flag: '🇹🇻', capital: 'Funafuti'   },
+  { name: 'Vanuatu', flag: '🇻🇺', capital: 'Port Vila'   }
+];
+
+
 
 let southamerica = [
   { name: 'Argentina', flag: '🇦🇷', capital: 'Buenos Aires'   },
@@ -221,6 +427,20 @@ let southamerica = [
   { name: 'Venezuela', flag: '🇻🇪', capital: 'Caracas'   }
 ];
 
+let southamerica2 = [
+  { name: 'Argentina', flag: '🇦🇷', capital: 'Buenos Aires'   },
+  { name: 'Bolivia', flag: '🇧🇴', capital: 'Sucre'   },
+  { name: 'Brazil', flag: '🇧🇷', capital: 'Brasília'   },
+  { name: 'Chile', flag: '🇨🇱', capital: 'Santiago'   },
+  { name: 'Colombia', flag: '🇨🇴', capital: 'Bogotá'   },
+  { name: 'Ecuador', flag: '🇪🇨', capital: 'Quito'   },
+  { name: 'Guyana', flag: '🇬🇾', capital: 'Georgetown'   },
+  { name: 'Paraguay', flag: '🇵🇾', capital: 'Asunción'   },
+  { name: 'Peru', flag: '🇵🇪', capital: 'Lima'   },
+  { name: 'Suriname', flag: '🇸🇷', capital: 'Paramaribo'   },
+  { name: 'Uruguay', flag: '🇺🇾', capital: 'Montevideo'   },
+  { name: 'Venezuela', flag: '🇻🇪', capital: 'Caracas'   }
+];
 
 let all = [
   { name: 'Algeria', flag: '🇩🇿', capital: 'Algiers'   },
@@ -663,6 +883,7 @@ function quizgenerator(total){
     quiz = selectedContinent[a].name;
     $("#question").html(quiz);
    return hint= selectedContinent[a].flag;
+   console.log(hint);
   } else {
     gameend.play();
     
@@ -698,11 +919,11 @@ function quizgenerator_choose(total){
     options=shuffleArray(options);
 
     for (let index = 0; index < options.length; index++) {
-  $("#flagimgChoice").append(`<div class="flag-option d-flex justify-content-center p-0 m-0 col-6">${options[index].flag}</div>`);  
+  $("#flagimgChoice").append(`<div class="flag-option col-md-6 col-lg-3 col-sm-6 col-6 g-0 g-sm-0 chooseflag">${options[index].flag}</div>`);
 }
 
 
-   hint= all[a].flag;
+   return hint= all[a].flag;
   } else {
     gameend.play();
     $("#flagimgChoice").fadeOut(function(){remove();});
@@ -727,7 +948,7 @@ $(document).ready(function() {
   
 });
 
-  $("#flagimgChoice").on("click", ".col-6", function() {
+  $("#flagimgChoice").on("click", ".chooseflag", function() {
     var clickedIndex = $(this).index();
     var clickedCountry = options[clickedIndex].name;
     
@@ -744,7 +965,7 @@ $(document).ready(function() {
     } else  {
       wrong.play();
 
-      alert("Wrong!!!! \n Correct Option is:   "+ hint);
+      alert("Wrong!!!! \n Correct Option is"+ hint);
   
        // Remove the correct country from the list
        all.splice(all.findIndex(country => country.name === quiz), 1); 
@@ -771,33 +992,33 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $(".homebuttons").on("click", function(){
-      var newText;
+      // var newText;
       
       // Set the new text content
-      var id = $(this).attr('id');
-      switch (id) {
-          case "AS":
-              newText="ASIA"; 
-              break;
-              case "AF":
-              newText="AFRICA";
-              break;
-              case "EU":
-              newText="EUROPE";
-              break;
-              case "NA":
-              newText="NORTH AMERICA";
-              break;
-              case "SA":
-              newText="SOUTH AMERICA";
-              break;
-              case "OC":
-              newText="OCEANIA";
-              break;
+      var newText = $(this).attr('id');
+      // switch (id) {
+      //     case "AS":
+      //         newText="ASIA"; 
+      //         break;
+      //         case "AF":
+      //         newText="AFRICA";
+      //         break;
+      //         case "EU":
+      //         newText="EUROPE";
+      //         break;
+      //         case "NA":
+      //         newText="NORTH AMERICA";
+      //         break;
+      //         case "SA":
+      //         newText="SOUTH AMERICA";
+      //         break;
+      //         case "OC":
+      //         newText="OCEANIA";
+      //         break;
       
-          default:
-              break;
-      }
+      //     default:
+      //         break;
+      // }
       var play = getQueryVariable("newText");
       if(play==="promode"){window.location.href = "./promode1.html?newText=" + newText; }
       else if(play==="capitals"){window.location.href = "./capitals.html?newText=" + newText; }
@@ -847,48 +1068,65 @@ $(document).ready(function() {
               break;
       }
 }
+
+
+
 selectedContinent = shuffleArray(selectedContinent);
+
 quizgenerator(selectedContinent.length);
   $("#score").html(score);
   $("#mistake").html(mistakes);
+  
 $("#flagimg").empty();
   for (let index = 0; index < selectedContinent.length; index++) {
-      $("#flagimg").append(`<div class="d-flex justify-content-center col-md-2 col-6 col-sm-4 px-1">${selectedContinent[index].flag}</div>`);
+      $("#flagimg").append(`<div class="d-flex justify-content-center col-md-2 col-6 col-sm-4 px-1" id="${selectedContinent[index].name}">${selectedContinent[index].flag}</div>`);
       }
   
 });
 
+// check for errors index is only finding the child in the the div.. added id in above method and select against it the name //
+$("#flagimg").on("click", "[id]", function() {
+    // var clickedIndex = $(this).index();
+    var clickedcountry2 = $(this).attr("id");
+  //  console.log(quiz);
+//     console.log(clickedIndex2);
+//     var clickedCountry = selectedContinent[clickedIndex].name;
+// console.log(clickedcountry2);
 
-$("#flagimg").on("click", ".col-md-2", function() {
-    var clickedIndex = $(this).index();
-    var clickedCountry = selectedContinent[clickedIndex].name;
-
-    if (clickedCountry === quiz) {
+    if (clickedcountry2 === quiz) {
       good.play();
       $(this).fadeOut(function() {
-        $(this).remove();
+      $(this).remove();
         
     });      
      score++;
       $("#score").html(score);
-      selectedContinent.splice(clickedIndex, 1);
+      selectedContinent.splice(selectedContinent.findIndex(country => country.name ===clickedcountry2),1);
+      // selectedContinent.splice(clickedcountry2, 1);
+      // console.log(selectedContinent);
       quizgenerator(selectedContinent.length);
      
     } else {
      wrong.play();
-      alert("Incorrect!!!\n Correct answer is:   "+ hint);
-      $(".col-md-2").eq(selectedContinent.findIndex(country => country.name === quiz)).fadeOut(function() {
-    $(this).remove();
-  });
-  
-  // Remove the correct country from the list
+      alert("Incorrect!!!\n Correct answer is  "+ hint);
+      // console.log(hint);
+      var countryremove = "#" + quiz;
+      $(countryremove).remove();
+      $(countryremove).fadeOut();
+
+            //       $(this).remove();
+              
+            //    $(".col-md-2").eq(selectedContinent.findIndex(country => country.name === quiz)).fadeOut(function() {
+            //   $(this).remove();
+          
+            // Remove the correct country from the list
   selectedContinent.splice(selectedContinent.findIndex(country => country.name === quiz), 1);
   quizgenerator(selectedContinent.length);  
       mistakes++;
       $("#mistake").html(mistakes);
       
     }
-  });
+});
   
 
 
@@ -908,6 +1146,10 @@ $(document).ready(function() {
     }
     return null;
 }
+
+
+
+
    // Retrieve the value of the "newText" query parameter
    var newText = getQueryVariable("newText");
    if(newText) {
@@ -918,68 +1160,82 @@ $(document).ready(function() {
            case "ASIA": 
            selectedContinent=asia; 
   
-           selectedContinent_2 = selectedContinent;                   
+           selectedContinent_2 = asia2;                   
                break;
                case "AFRICA": 
            selectedContinent=africa;               
           
-           selectedContinent_2 = selectedContinent;     
+           selectedContinent_2 = africa2;     
                break;
                case "EUROPE": 
            selectedContinent=europe;
-           selectedContinent_2 = selectedContinent;                    
+           selectedContinent_2 = europe2;                    
                break;
                case "OCEANIA": 
            selectedContinent=oceania;              
-           selectedContinent_2 = selectedContinent;      
+           selectedContinent_2 = oceania2;      
                break;
                case "NORTH AMERICA": 
            selectedContinent=northamerica;         
-           selectedContinent_2 = selectedContinent;           
+           selectedContinent_2 = northamerica2;           
                break;
                case "SOUTH AMERICA": 
            selectedContinent=southamerica;         
-           selectedContinent_2 = selectedContinent;           
+           selectedContinent_2 = southamerica2;           
                break;        
            default:
                break;
        }
  }
+
+
+
+ 
  selectedContinent= shuffleArray(selectedContinent);
  selectedContinent_2= shuffleArray(selectedContinent_2);
+
+
   quizgenerator_capital(selectedContinent.length, selectedContinent_2, selectedContinent);
   $("#score").html(score);
   $("#mistake").html(lives);
   
 });
-
+// comeehere
   $("#capital").on("click", ".col-6", function() {
     var clickedIndex = $(this).index();
+    console.log(clickedIndex);
     var clickedCountry = options[clickedIndex].name;
-    
+    console.log(clickedCountry);
+
     if (clickedCountry === quiz) {
       good.play();
       $(this).fadeOut(function() {
-        $(this).remove();
+        $(this).empty();  //i changed it to empty from remove//
     });      
      score++;
       $("#score").html(score);
-      selectedContinent.splice(selectedContinent.findIndex(country => country.name === quiz), 1);
+    selectedContinent.splice(selectedContinent.findIndex(country => country.name === quiz), 1);
+     
+      console.log(selectedContinent.length);
+      console.log(selectedContinent_2.length);
       quizgenerator_capital(selectedContinent.length, selectedContinent_2, selectedContinent);
      
     } else  {
       wrong.play();
 
-      alert("Wrong!!!! \n Correct Option is:    "+ hint);
+      alert("Wrong!!!! \n Correct Option is"+ hint);
   
        // Remove the correct country from the list
        selectedContinent.splice(selectedContinent.findIndex(country => country.name === quiz), 1); 
       lives--;        
       $("#mistake").html(lives);
-      if (lives>0) {
+      if (lives>=0) {
         quizgenerator_capital(selectedContinent.length, selectedContinent_2, selectedContinent);
       } else {
         $("#capital").fadeOut(function(){remove();});
+        if (lives===-1){
+          $("#mistake").html(0);
+        }
         gameend.play();
         setTimeout(() => {
           const url = "./endgame.html?score=" + score;
@@ -1015,11 +1271,12 @@ $(document).ready(function() {
       options=shuffleArray(options);                                                                
   
       for (let index = 0; index < options.length; index++) {
-    $("#capital").append(`<div class="flag-option capitaloption d-flex justify-content-center py-4 mt-5 col-6"><h3 id="capitaloption">${index+1}:   ${options[index].capital}</h3></div>`);  
-  }
+    $("#capital").append(`<div   class="flag-option capitaloption col-md-6 col-lg-6 col-sm-6 col-6"
+    ><h3 id="capitaloption">${index+1}:   ${options[index].capital}</h3></div>`);  
+      }
+ 
   
-  
-     hint= selectedContinent[a].capital;
+     return hint= selectedContinent[a].capital;
     } else {
       gameend.play();
       $("#capital").fadeOut(function(){remove();});

@@ -130,18 +130,11 @@ body h1, body h2, body h3 {
   color: white;
   background-color: var(--bg-color-black);
   font-size: 1.8em;
-  font-weight: 500;
+  font-weight: 200;
   border: solid 5px #fabd22  ;
   border-radius: 50px;
 }
 .mapclicktext h1 {
-  /* padding: 0.3em 1em;
-  color: black;
-  background-color: #fabd22;
-  font-size: 1.8em;
-  font-weight: 500;
-  border: solid 5px #fabd22  ;
-  border-radius: 50px; */
   width: auto;
   padding: 0.6em 1.5em;
   color: black;
@@ -150,6 +143,35 @@ body h1, body h2, body h3 {
   font-weight: 500;
   border: solid 5px #fabd22  ;
   border-radius: 50px;
+}
+
+@media (max-width:568px) {
+  .mapclicktext h1 {
+    width: auto;
+    padding: 0.6em 1.5em;
+    color: black;
+    background-color: var(--bg-color-yellow);
+    font-size: 1.8em;
+    font-weight: 200;
+    font-size: 24px;
+    border: solid 5px #fabd22  ;
+    border-radius: 50px;
+  }
+
+  .mapclicktext div h3 {
+    padding: 0.3em 1em;
+    /* color: #158cce;
+    background-color: #fabd22; */
+    color: white;
+    background-color: black;
+    font-weight: 200;
+    font-size: 16px;
+    border: solid 5px #fabd22;
+    border-radius: 50px;
+  }
+
+
+  
 }
 .mapclicktext div h3 {
   padding: 0.3em 1em;
@@ -210,6 +232,19 @@ body h1, body h2, body h3 {
   color: #000000;
   border: solid 5px #fabd22;
   border-radius: 50px;
+}
+
+@media (max-width:568px) {
+  #indexhomebtn {
+    margin-left: 70px;
+    background-color: var(--bg-color-yellow);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000000;
+    border: solid 5px #fabd22;
+    border-radius: 50px;
+  }
+  
 }
 
 #indexhomebtn:hover{
@@ -331,6 +366,27 @@ body h1, body h2, body h3 {
   text-decoration: none;
 }
 
+@media (max-width:568px) {
+  .indexbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 6rem;
+    background-color: var(--bg-color-yellow);
+    color: black;
+    border-radius: 15px;
+    gap: 5px;
+    font-weight: 800;
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  
+}
+
 .indexclick h1 {
   width: auto;
   padding: 0.6em 1.5em;
@@ -340,6 +396,23 @@ body h1, body h2, body h3 {
   font-weight: 500;
   border: solid 5px #fabd22  ;
   border-radius: 50px;
+  cursor: pointer;
+}
+
+@media (max-width:568px) {
+  .indexclick h1 {
+    width: auto;
+    padding: 0.6em 1.5em;
+    color: white;
+    background-color: black;
+    font-size: 1.8em;
+    font-weight: 500;
+    font-size: 24px;
+    border: solid 5px #fabd22  ;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
 }
 
 

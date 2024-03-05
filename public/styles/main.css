@@ -585,3 +585,24 @@ body h1, body h2, body h3 {
 #gameendhomebtn:hover{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* This creates a shadow effect */
 }
+
+
+@media (max-width:568px) {
+  #capitaloption{
+  height: 100px;
+  box-sizing: border-box;
+  background-color: var(--bg-color-yellow);
+  color: black;
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 0px;
+  margin: 15px 10px;
+  padding: 15px 0px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+}

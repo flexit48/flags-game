@@ -162,6 +162,20 @@ body h1, body h2, body h3 {
   border-radius: 50px;
 }
 
+@media (max-width:568px) {
+  .promapclicktext h1 {
+    width: auto;
+    padding: 0.6em 1.5em;
+    color: white;
+    background-color: var(--bg-color-black);
+    font-size: 1.8em;
+    font-weight: 200;
+    border: solid 5px #fabd22  ;
+    border-radius: 50px;
+    font-size: 25px;
+  }
+}
+
  
 .continentbtn {
   width: 500px;
@@ -314,6 +328,7 @@ body h1, body h2, body h3 {
   font-size: 25px;
   font-family: 'Orbitron', sans-serif;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .indexclick h1 {
@@ -359,6 +374,8 @@ body h1, body h2, body h3 {
   border-radius: 50px;
 }
 
+
+
 .optionclicktext h3{
   padding: 0.3em 1em;
   /* color: #158cce;
@@ -369,6 +386,36 @@ body h1, body h2, body h3 {
   border: solid 5px var(--bg-color-black);
   border-radius: 50px;
 }
+
+@media (max-width:568px) {
+  .optionclicktext h1{
+    width: auto;
+    padding: 0.6em 1.5em;
+    color: white;
+    background-color: var(--bg-color-black);
+    font-size: 1.8em;
+    font-weight: 200;
+    border: solid 5px #fabd22  ;
+    border-radius: 50px;
+    font-size: 24px;
+  }
+
+  .optionclicktext h3{
+    margin-top: 0.5em;
+    padding: 0.3em 1em;
+    /* color: #158cce;
+    background-color: #fabd22; */
+    color: white;
+    background-color: var(--bg-color-black);
+    font-weight: 200;
+    border: solid 5px var(--bg-color-black);
+    border-radius: 50px;
+    font-size: 18px;
+  }
+  
+}
+
+
 
 .chooseflag{
   font-size: 180px;
@@ -449,8 +496,6 @@ body h1, body h2, body h3 {
   border-radius: 50px;
 }
 
-
-
 /* //////////// Promode 1 ////////// */
 
 .capitalsbackground{
@@ -470,6 +515,8 @@ body h1, body h2, body h3 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* This creates a shadow effect */
 
 }
+
+
 
 .capitalsclicktext h1 {
   /* padding: 0.3em 1em;
@@ -494,11 +541,30 @@ body h1, body h2, body h3 {
   background-color: #fabd22; */
   color: white;
   background-color: black;
-  font-weight: 500;
+  font-weight: 200;
   border: solid 5px #fabd22;
   border-radius: 50px;
 }
 
+
+@media (max-width:568px) {
+  #capitalshomebtn{
+    margin-left: 100px;
+  }
+
+  .capitalsclicktext div h3 {
+    padding: 0.3em 1em;
+    /* color: #158cce;
+    background-color: #fabd22; */
+    color: white;
+    background-color: black;
+    font-weight: 150;
+    border: solid 5px #fabd22;
+    border-radius: 50px;
+    font-size: 14px;
+  }
+  
+}
 
 /* ///////// Choose Options//// */
 
@@ -526,7 +592,7 @@ body h1, body h2, body h3 {
   box-sizing: border-box;
   background-color: var(--bg-color-yellow);
   color: black;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 15px;
   padding: 0px;
   margin: 15px 10px;
@@ -584,25 +650,4 @@ body h1, body h2, body h3 {
 
 #gameendhomebtn:hover{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* This creates a shadow effect */
-}
-
-
-@media (max-width:568px) {
-  #capitaloption{
-  height: 100px;
-  box-sizing: border-box;
-  background-color: var(--bg-color-yellow);
-  color: black;
-  font-size: 16px;
-  border-radius: 15px;
-  padding: 0px;
-  margin: 15px 10px;
-  padding: 15px 0px;
-  text-decoration: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-  
 }

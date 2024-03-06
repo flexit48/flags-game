@@ -1075,7 +1075,7 @@ selectedContinent = shuffleArray(selectedContinent);
 
 quizgenerator(selectedContinent.length);
   $("#score").html(score);
-  $("#mistake").html(mistakes);
+  $("#promistake").html(mistakes);
   
 $("#flagimg").empty();
   for (let index = 0; index < selectedContinent.length; index++) {
@@ -1123,7 +1123,7 @@ $("#flagimg").on("click", "[id]", function() {
   selectedContinent.splice(selectedContinent.findIndex(country => country.name === quiz), 1);
   quizgenerator(selectedContinent.length);  
       mistakes++;
-      $("#mistake").html(mistakes);
+      $("#promistake").html(mistakes);
       
     }
 });
